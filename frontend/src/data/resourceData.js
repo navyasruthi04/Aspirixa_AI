@@ -1,0 +1,16 @@
+export const resourceCategories = ['Concept Notes', 'Video Lessons', 'Practice Sets', 'Current Affairs', 'Revision Material', 'Exam Strategy'];
+
+export const resources = [
+  { id: 'r1', category: 'Concept Notes', title: 'Percentages: Concepts & Shortcuts', subject: 'Quantitative Aptitude', topic: 'Percentages', type: 'Notes', difficulty: 'Beginner', minutes: 25, summary: 'Fraction-percentage table, successive change and common exam patterns.' },
+  { id: 'r2', category: 'Concept Notes', title: 'Coding-Decoding Patterns', subject: 'Reasoning', topic: 'Coding-Decoding', type: 'Notes', difficulty: 'Intermediate', minutes: 20, summary: 'Letter shifts, number codes and mixed patterns with solved examples.' },
+  { id: 'r3', category: 'Video Lessons', title: 'Percentages from Scratch', subject: 'Quantitative Aptitude', topic: 'Percentages', type: 'Video', difficulty: 'Beginner', minutes: 35, summary: 'A step-by-step video that builds percentages from fractions.' },
+  { id: 'r4', category: 'Video Lessons', title: 'Error Spotting: Subject-Verb Agreement', subject: 'English', topic: 'Error Spotting', type: 'Video', difficulty: 'Intermediate', minutes: 28, summary: 'Common agreement traps such as each, neither and either.' },
+  { id: 'r5', category: 'Practice Sets', title: 'Percentages Practice Set 1', subject: 'Quantitative Aptitude', topic: 'Percentages', type: 'Practice set', difficulty: 'Intermediate', minutes: 40, summary: '20 mixed-level questions with detailed solutions.' },
+  { id: 'r6', category: 'Practice Sets', title: 'Error Spotting Drill: 30 Questions', subject: 'English', topic: 'Error Spotting', type: 'Practice set', difficulty: 'Intermediate', minutes: 30, summary: 'Timed drill with explanations for every wrong option.' },
+  { id: 'r7', category: 'Current Affairs', title: 'Weekly Current Affairs Digest', subject: 'General Awareness', topic: 'Current Affairs', type: 'Digest', difficulty: 'Beginner', minutes: 30, summary: 'The week in short points with a quick quiz at the end.' },
+  { id: 'r8', category: 'Current Affairs', title: 'Economy & Budget Basics', subject: 'General Awareness', topic: 'Current Affairs', type: 'Notes', difficulty: 'Intermediate', minutes: 25, summary: 'Budget terms, repo rate, GDP and how they appear in exams.' },
+  { id: 'r9', category: 'Revision Material', title: 'One-Page Formula Sheet: Arithmetic', subject: 'Quantitative Aptitude', topic: 'Arithmetic', type: 'Cheat sheet', difficulty: 'Beginner', minutes: 15, summary: 'Percentages, ratio, average, profit and loss on one page.' },
+  { id: 'r10', category: 'Revision Material', title: 'Indian Polity Quick Revision', subject: 'General Awareness', topic: 'Indian Polity', type: 'Flashcards', difficulty: 'Intermediate', minutes: 20, summary: 'Articles, amendments and bodies in flashcard form.' },
+  { id: 'r11', category: 'Exam Strategy', title: 'SSC CGL Tier-1 Time Management', subject: 'Exam Strategy', topic: 'Time management', type: 'Guide', difficulty: 'Intermediate', minutes: 18, summary: 'How to split time across sections and when to skip a question.' },
+  { id: 'r12', category: 'Exam Strategy', title: 'How to Analyse a Mock Test', subject: 'Exam Strategy', topic: 'Mock analysis', type: 'Guide', difficulty: 'Beginner', minutes: 15, summary: 'A simple method to turn mock test mistakes into a revision list.' },
+];

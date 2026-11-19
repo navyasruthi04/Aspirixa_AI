@@ -1,0 +1,6 @@
+exam_id,exam_name,minimum_qualification,domain,difficulty,subjects
+1,SSC CGL,Graduation,General,Medium,"Quantitative Aptitude;Reasoning;English;General Awareness"
+2,Banking PO,Graduation,Banking,Medium,"Quantitative Aptitude;Reasoning;English;General Awareness"
+3,UPSC CSE,Graduation,General,High,"General Studies;Current Affairs;CSAT"
+4,CDS,Graduation,Defence,High,"English;General Knowledge;Mathematics"
+5,RRB NTPC,Graduation,Railways,Medium,"Mathematics;Reasoning;General Awareness"

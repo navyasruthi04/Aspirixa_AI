@@ -1,0 +1,57 @@
+export const diagnosticQuestions = [
+  { id: 'd1', subject: 'Quantitative Aptitude', topic: 'Percentages', text: 'A number is first increased by 20% and then decreased by 20%. What is the net change?',
+    options: ['No change', '4% decrease', '4% increase', '2% decrease'], answer: 1, explanation: '1.2 x 0.8 = 0.96, so the value falls by 4%.' },
+  { id: 'd2', subject: 'Reasoning', topic: 'Coding-Decoding', text: 'If CAT is coded as DBU, how will DOG be coded?',
+    options: ['EPH', 'DPH', 'EOH', 'FPH'], answer: 0, explanation: 'Each letter moves one step forward.' },
+  { id: 'd3', subject: 'English', topic: 'Error Spotting', text: "Find the part with an error: 'Each of the students / have submitted / their assignment / on time.'",
+    options: ['Each of the students', 'have submitted', 'their assignment', 'on time'], answer: 1, explanation: "'Each' is singular, so it needs 'has'." },
+  { id: 'd4', subject: 'General Awareness', topic: 'Current Affairs', text: 'The Union Budget is presented in Parliament under which Article of the Constitution?',
+    options: ['Article 110', 'Article 112', 'Article 148', 'Article 280'], answer: 1, explanation: 'Article 112 covers the Annual Financial Statement.' },
+  { id: 'd5', subject: 'Quantitative Aptitude', topic: 'Percentages', text: 'If 40% of a number is 120, what is 65% of that number?',
+    options: ['180', '195', '210', '225'], answer: 1, explanation: 'The number is 300, and 65% of 300 is 195.' },
+  { id: 'd6', subject: 'Reasoning', topic: 'Blood Relations', text: "Pointing to a man, Riya says, 'He is the son of my mother's only brother.' How is the man related to Riya?",
+    options: ['Brother', 'Cousin', 'Uncle', 'Nephew'], answer: 1, explanation: "Her mother's brother's son is her cousin." },
+  { id: 'd7', subject: 'English', topic: 'Vocabulary', text: "Choose the word closest in meaning to 'BENEVOLENT'.",
+    options: ['Hostile', 'Kind', 'Careless', 'Proud'], answer: 1, explanation: 'Benevolent means kind and generous.' },
+  { id: 'd8', subject: 'General Awareness', topic: 'Indian Polity', text: 'Fundamental Duties were added to the Constitution by which Amendment?',
+    options: ['42nd', '44th', '52nd', '73rd'], answer: 0, explanation: 'The 42nd Amendment (1976) added Fundamental Duties.' },
+  { id: 'd9', subject: 'Quantitative Aptitude', topic: 'Averages', text: 'The average of 5 numbers is 24. If one number is removed, the average of the remaining four becomes 26. What is the removed number?',
+    options: ['14', '16', '18', '20'], answer: 1, explanation: 'Total = 120, remaining total = 104, so the removed number is 16.' },
+  { id: 'd10', subject: 'Reasoning', topic: 'Number Series', text: 'Find the next number: 2, 6, 12, 20, 30, ?',
+    options: ['40', '42', '44', '46'], answer: 1, explanation: 'The gaps are 4, 6, 8, 10, so the next gap is 12 and the answer is 42.' },
+];
+
+export const adaptivePool = [
+  { id: 'a1', difficulty: 'Easy', subject: 'Quantitative Aptitude', topic: 'Percentages', text: 'What is 25% of 240?',
+    options: ['50', '60', '70', '80'], answer: 1, explanation: '25% is one quarter, and 240 / 4 = 60.' },
+  { id: 'a2', difficulty: 'Easy', subject: 'Reasoning', topic: 'Coding-Decoding', text: 'If A=1, B=2, C=3 and so on, what is the sum of the letter values in CAB?',
+    options: ['5', '6', '7', '8'], answer: 1, explanation: 'C=3, A=1, B=2, and 3 + 1 + 2 = 6.' },
+  { id: 'a3', difficulty: 'Easy', subject: 'English', topic: 'Error Spotting', text: "Find the error: 'She / don't / like tea.'",
+    options: ['She', "don't", 'like tea', 'No error'], answer: 1, explanation: "With 'she' we use 'doesn't'." },
+  { id: 'a4', difficulty: 'Moderate', subject: 'Quantitative Aptitude', topic: 'Percentages', text: 'A price rises by 25% and then falls by 20%. What is the net change?',
+    options: ['5% increase', 'No change', '5% decrease', '2% decrease'], answer: 1, explanation: '1.25 x 0.8 = 1.00, so there is no net change.' },
+  { id: 'a5', difficulty: 'Moderate', subject: 'Reasoning', topic: 'Coding-Decoding', text: 'In a code, MANGO is written as NBOHP. How is APPLE written in that code?',
+    options: ['BQQMF', 'BQPMF', 'CQQMF', 'BRQMF'], answer: 0, explanation: 'Every letter moves one step forward: A-B, P-Q, P-Q, L-M, E-F.' },
+  { id: 'a6', difficulty: 'Moderate', subject: 'General Awareness', topic: 'Current Affairs', text: "Which institution's Monetary Policy Committee decides India's repo rate?",
+    options: ['SEBI', 'Reserve Bank of India', 'NITI Aayog', 'Finance Commission'], answer: 1, explanation: 'The RBI sets the repo rate through its Monetary Policy Committee.' },
+  { id: 'a7', difficulty: 'Difficult', subject: 'Quantitative Aptitude', topic: 'Percentages', text: 'In a two-candidate election the winner gets 55% of the votes and wins by 3,000 votes. How many votes were cast?',
+    options: ['25,000', '30,000', '35,000', '40,000'], answer: 1, explanation: 'The margin is 55% - 45% = 10% of the votes. So 10% = 3,000 and the total is 30,000.' },
+  { id: 'a8', difficulty: 'Difficult', subject: 'Reasoning', topic: 'Coding-Decoding', text: "A code moves letters +1, -1, +1, -1 in order. How is 'MIND' written?",
+    options: ['NHOC', 'NJOC', 'NHOE', 'LJMC'], answer: 0, explanation: 'M+1=N, I-1=H, N+1=O, D-1=C, so the code is NHOC.' },
+  { id: 'a9', difficulty: 'Difficult', subject: 'English', topic: 'Error Spotting', text: "Find the error: 'Neither the manager / nor the employees / was informed / about the change.'",
+    options: ['Neither the manager', 'nor the employees', 'was informed', 'about the change'], answer: 2, explanation: "The verb agrees with the nearer subject 'employees', so it should be 'were'." },
+];
+
+// Sample result for the frontend demo. Real BKT output will come from the backend.
+export const diagnosticResult = {
+  overall: 64,
+  strong: [{ name: 'Reasoning', value: 81 }, { name: 'English', value: 72 }],
+  attention: [{ name: 'Quantitative Aptitude', value: 54 }, { name: 'General Awareness', value: 42 }],
+  topics: [
+    { name: 'Current Affairs', subject: 'General Awareness', value: 42 },
+    { name: 'Percentages', subject: 'Quantitative Aptitude', value: 48 },
+    { name: 'Error Spotting', subject: 'English', value: 51 },
+    { name: 'Indian Polity', subject: 'General Awareness', value: 53 },
+    { name: 'Coding-Decoding', subject: 'Reasoning', value: 81 },
+  ],
+};

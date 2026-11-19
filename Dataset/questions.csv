@@ -1,0 +1,73 @@
+question_id,subject,topic,difficulty,question,option_a,option_b,option_c,option_d,correct_answer,diagnostic
+1,Quantitative Aptitude,Percentages,Easy,What is 20% of 200?,20,30,40,50,C,yes
+2,Quantitative Aptitude,Percentages,Medium,What is 25% of 400?,50,75,100,125,C,yes
+3,Quantitative Aptitude,Percentages,Hard,If a number increases from 200 to 260 what is the percentage increase?,20%,25%,30%,35%,C,yes
+4,Reasoning,Number Series,Easy,What comes next 2 4 6 8?,9,10,11,12,B,yes
+5,Reasoning,Number Series,Medium,What comes next 3 6 12 24?,36,42,48,50,C,yes
+6,Reasoning,Number Series,Hard,What comes next 2 6 18 54?,108,144,162,216,C,yes
+7,English,Grammar,Easy,Choose the correct sentence.,He go to school,He goes to school,He going school,He gone school,B,yes
+8,English,Grammar,Medium,Choose the correct sentence.,She have completed it,She has completed it,She completing it,She complete it,B,yes
+9,English,Grammar,Hard,Choose the grammatically correct sentence.,Neither of the answers are correct,Neither of the answers is correct,Neither answers is correct,Neither answer are correct,B,yes
+10,General Awareness,Indian Polity,Easy,Who is the constitutional head of India?,Prime Minister,President,Chief Justice,Governor,B,yes
+11,General Awareness,Indian Polity,Medium,How many Fundamental Rights are currently recognized in India?,5,6,7,8,B,yes
+12,General Awareness,Indian Polity,Hard,Which article deals with constitutional remedies?,Article 14,Article 19,Article 32,Article 44,C,yes
+13,Quantitative Aptitude,Percentages,Easy,What is 10% of 350?,30,45,3.5,35,D,no
+14,Quantitative Aptitude,Percentages,Medium,A shirt costs Rs 800 and is sold at a 15% discount. What is the selling price?,Rs 680,Rs 120,Rs 720,Rs 700,A,no
+15,Quantitative Aptitude,Percentages,Hard,A price is increased by 20% and then decreased by 20%. What is the net change?,4% decrease,No change,4% increase,2% decrease,A,no
+16,Reasoning,Number Series,Easy,What comes next? 5 10 15 20 ?,22,24,25,30,C,no
+17,Reasoning,Number Series,Medium,What comes next? 2 5 10 17 ?,25,27,24,26,D,no
+18,Reasoning,Number Series,Hard,What comes next? 1 2 6 24 120 ?,840,600,720,480,C,no
+19,English,Grammar,Easy,Choose the correct sentence.,They playing football.,They is playing football.,They are playing football.,They was playing football.,C,no
+20,English,Grammar,Medium,Fill in the blank: She has been working here ___ 2019.,since,during,for,from,A,no
+21,English,Grammar,Hard,"Fill in the blank: If I ___ you, I would accept the offer.",was,were,am,be,B,no
+22,General Awareness,Indian Polity,Easy,Who is the ex-officio Chairman of the Rajya Sabha?,Speaker,President,Vice President,Prime Minister,C,no
+23,General Awareness,Indian Polity,Medium,What is the minimum age to be elected to the Lok Sabha?,30 years,25 years,18 years,21 years,B,no
+24,General Awareness,Indian Polity,Hard,Which Article of the Constitution deals with the proclamation of National Emergency?,Article 370,Article 356,Article 352,Article 360,C,no
+25,Quantitative Aptitude,Profit and Loss,Easy,An article bought for Rs 200 is sold for Rs 250. What is the profit?,Rs 50,Rs 100,Rs 25,Rs 75,A,yes
+26,Quantitative Aptitude,Profit and Loss,Easy,An article bought for Rs 500 is sold for Rs 450. What is the loss?,Rs 55,Rs 45,Rs 40,Rs 50,D,no
+27,Quantitative Aptitude,Profit and Loss,Medium,An article bought for Rs 400 is sold at 25% profit. What is the selling price?,Rs 525,Rs 450,Rs 425,Rs 500,D,yes
+28,Quantitative Aptitude,Profit and Loss,Medium,An article sold for Rs 720 gives a 20% profit. What is its cost price?,Rs 600,Rs 576,Rs 640,Rs 700,A,no
+29,Quantitative Aptitude,Profit and Loss,Hard,"Two articles are each sold for Rs 1,200, one at 20% profit and the other at 20% loss. What is the overall result?",Loss of Rs 100,No profit no loss,Profit of Rs 100,Loss of Rs 200,A,yes
+30,Quantitative Aptitude,Profit and Loss,Hard,A trader marks goods 40% above cost price and allows a 10% discount. What is his profit percentage?,30%,40%,36%,26%,D,no
+31,Quantitative Aptitude,Time and Work,Easy,A can finish a work in 10 days. What fraction of the work does A finish in 1 day?,1/100,1/20,1/10,1/5,C,no
+32,Quantitative Aptitude,Time and Work,Easy,A and B can each finish a work in 6 days. In how many days will they finish it together?,6 days,3 days,2 days,12 days,B,no
+33,Quantitative Aptitude,Time and Work,Medium,A can finish a work in 12 days and B in 24 days. In how many days will they finish it together?,6 days,7 days,8 days,9 days,C,no
+34,Quantitative Aptitude,Time and Work,Medium,10 men can complete a work in 12 days. How many days will 15 men take?,8 days,6 days,9 days,18 days,A,no
+35,Quantitative Aptitude,Time and Work,Hard,A and B together finish a work in 12 days. A alone can finish it in 20 days. In how many days can B alone finish it?,30 days,24 days,36 days,32 days,A,no
+36,Quantitative Aptitude,Time and Work,Hard,"A can finish a work in 20 days and B in 30 days. They work together for 6 days, then A leaves. In how many days in total is the work finished?",21 days,15 days,24 days,18 days,A,no
+37,Reasoning,Coding-Decoding,Easy,"If A=1, B=2, C=3 and so on, what is the code for CAB?",321,312,123,213,B,yes
+38,Reasoning,Coding-Decoding,Easy,"In a code, CAT is written as DBU. How is DOG written in the same code?",EPG,EPH,ENH,CNF,B,no
+39,Reasoning,Coding-Decoding,Medium,"In a code, BOOK is written as CPPL. How is PEN written in the same code?",QEO,ODM,PFO,QFO,D,yes
+40,Reasoning,Coding-Decoding,Medium,"In a code, MONDAY is written as NPOEBZ. How is FRIDAY written in the same code?",ESHCZX,GSJEBZ,GSJEAZ,GRJEBZ,B,no
+41,Reasoning,Coding-Decoding,Hard,"In a code, ROSE is written as 6821 and CHAIR as 73596. How is SEARCH written in that code?",215673,251673,215637,215763,A,yes
+42,Reasoning,Coding-Decoding,Hard,"In a code, PEN is written as QGQ, where the letters are shifted forward by 1, 2 and 3 places respectively. How is CAT written?",DCW,DBU,DCV,EBW,A,no
+43,Reasoning,Blood Relations,Easy,"Pointing to a man, Riya said, 'He is the son of my mother's only brother.' How is the man related to Riya?",Brother,Cousin,Uncle,Nephew,B,no
+44,Reasoning,Blood Relations,Easy,A is the father of B. C is the brother of B. How is A related to C?,Father,Grandfather,Uncle,Brother,A,no
+45,Reasoning,Blood Relations,Medium,"Pointing to a girl, Ravi said, 'Her mother is the only daughter of my mother.' How is the girl related to Ravi?",Cousin,Daughter,Sister,Niece,D,no
+46,Reasoning,Blood Relations,Medium,A is B's sister. C is B's mother. D is C's father. How is A related to D?,Niece,Daughter,Granddaughter,Grandmother,C,no
+47,Reasoning,Blood Relations,Hard,"Introducing a man, a woman said, 'His mother is the only daughter of my father.' How is the woman related to the man?",Aunt,Sister,Mother,Grandmother,C,no
+48,Reasoning,Blood Relations,Hard,X is the father of Y. Y is the mother of Z. Z is the sister of W. How is X related to W?,Paternal grandfather,Maternal grandfather,Father,Uncle,B,no
+49,English,Vocabulary,Easy,Choose the word closest in meaning to 'Rapid'.,Quick,Late,Weak,Slow,A,yes
+50,English,Vocabulary,Easy,Choose the word opposite in meaning to 'Ancient'.,Historic,Modern,Antique,Old,B,no
+51,English,Vocabulary,Medium,Choose the word closest in meaning to 'Abundant'.,Rare,Scarce,Limited,Plentiful,D,yes
+52,English,Vocabulary,Medium,Choose the word opposite in meaning to 'Generous'.,Kind,Charitable,Liberal,Stingy,D,no
+53,English,Vocabulary,Hard,Choose the one word for 'a person who can speak two languages'.,Orator,Polyglot,Bilingual,Linguist,C,yes
+54,English,Vocabulary,Hard,What does the idiom 'a blessing in disguise' mean?,Something good that seems bad at first,A hidden curse,An unexpected guest,A religious ceremony,A,no
+55,General Awareness,Indian Geography,Easy,Which is the longest river flowing mostly within India?,Godavari,Narmada,Ganga,Yamuna,C,no
+56,General Awareness,Indian Geography,Easy,The Thar Desert is located mainly in which state?,Gujarat,Rajasthan,Punjab,Haryana,B,no
+57,General Awareness,Indian Geography,Medium,Which Indian state has the longest coastline?,Andhra Pradesh,Gujarat,Maharashtra,Tamil Nadu,B,no
+58,General Awareness,Indian Geography,Medium,The Tropic of Cancer does NOT pass through which of these states?,Tripura,Gujarat,Odisha,Jharkhand,C,no
+59,General Awareness,Indian Geography,Hard,Which river is known as the 'Sorrow of Bihar'?,Son,Ghaghara,Kosi,Gandak,C,no
+60,General Awareness,Indian Geography,Hard,"Chilika Lake, the largest brackish water lagoon in India, is in which state?",Tamil Nadu,Odisha,Andhra Pradesh,Kerala,B,no
+61,General Awareness,General Science,Easy,Which gas do plants absorb from the air for photosynthesis?,Nitrogen,Carbon dioxide,Hydrogen,Oxygen,B,yes
+62,General Awareness,General Science,Easy,What is the chemical symbol of sodium?,S,Sd,So,Na,D,no
+63,General Awareness,General Science,Medium,Which vitamin is made by the skin when it is exposed to sunlight?,Vitamin K,Vitamin C,Vitamin A,Vitamin D,D,yes
+64,General Awareness,General Science,Medium,What is the SI unit of force?,Watt,Joule,Pascal,Newton,D,no
+65,General Awareness,General Science,Hard,Which of the following is NOT a greenhouse gas?,Nitrogen,Methane,Carbon dioxide,Nitrous oxide,A,yes
+66,General Awareness,General Science,Hard,Which of the following is a non-metal that is liquid at room temperature?,Chlorine,Bromine,Mercury,Gallium,B,no
+67,General Awareness,Indian History,Easy,Who is known as the 'Father of the Nation' in India?,Subhas Chandra Bose,Mahatma Gandhi,Jawaharlal Nehru,Sardar Patel,B,no
+68,General Awareness,Indian History,Easy,In which year did India become independent?,1950,1947,1945,1942,B,no
+69,General Awareness,Indian History,Medium,In which year was the Quit India Movement launched?,1942,1930,1935,1946,A,no
+70,General Awareness,Indian History,Medium,Who founded the Maurya Empire?,Ashoka,Chandragupta Maurya,Bindusara,Samudragupta,B,no
+71,General Awareness,Indian History,Hard,The Battle of Plassey was fought in which year?,1526,1764,1857,1757,D,no
+72,General Awareness,Indian History,Hard,Who was the first Governor-General of independent India?,C. Rajagopalachari,Lord Wavell,Dr Rajendra Prasad,Lord Mountbatten,D,no
