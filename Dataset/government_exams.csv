@@ -1,6 +1,11 @@
-exam_id,exam_name,minimum_qualification,domain,difficulty,subjects
-1,SSC CGL,Graduation,General,Medium,"Quantitative Aptitude;Reasoning;English;General Awareness"
-2,Banking PO,Graduation,Banking,Medium,"Quantitative Aptitude;Reasoning;English;General Awareness"
-3,UPSC CSE,Graduation,General,High,"General Studies;Current Affairs;CSAT"
-4,CDS,Graduation,Defence,High,"English;General Knowledge;Mathematics"
-5,RRB NTPC,Graduation,Railways,Medium,"Mathematics;Reasoning;General Awareness"
+exam_id,exam_name,minimum_qualification,domain,difficulty,subjects,min_age,max_age
+1,SSC CGL,Graduation,General,Medium,Quantitative Aptitude;Reasoning;English;General Awareness,18,32
+2,Banking PO,Graduation,Banking,Medium,Quantitative Aptitude;Reasoning;English;General Awareness,,
+3,UPSC CSE,Graduation,General,High,General Studies;Current Affairs;CSAT,,
+4,CDS,Graduation,Defence,High,English;General Knowledge;Mathematics,,
+5,RRB NTPC,Graduation,Railways,Medium,Mathematics;Reasoning;General Awareness,,
+6,SSC CHSL,12th,General,Medium,Quantitative Aptitude;Reasoning;English;General Awareness,18,27
+7,SSC MTS,10th,General,Medium,Numerical Ability;Reasoning;English;General Awareness,18,27
+8,SSC CPO,Graduation,General,Medium,Quantitative Aptitude;Reasoning;English;General Awareness,18,30
+9,SSC GD Constable,10th,General,Medium,Reasoning;General Awareness;Mathematics;English,18,23
+10,SSC JE,Diploma,General,Medium,Engineering;General Awareness;Reasoning,18,32
