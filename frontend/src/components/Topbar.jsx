@@ -1,8 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { Menu, Search, Bell, Flame } from 'lucide-react';
+import { Menu, Search, Bell, Flame, LogOut } from 'lucide-react';
 import { navItems } from '../data/navData.js';
 import { student, notifications } from '../data/studentData.js';
+import { getStoredUser, logout } from '../services/api.js';
 
 export default function Topbar({ onMenu }) {
   const { pathname } = useLocation();
@@ -11,6 +12,13 @@ export default function Topbar({ onMenu }) {
   const [open, setOpen] = useState(false);
   const ref = useRef(null);
   const current = navItems.find((n) => n.to === pathname) || navItems[0];
+  const storedUser = getStoredUser();
+  const displayName = storedUser?.full_name || storedUser?.fullName || storedUser?.name || storedUser?.email || 'Student';
+
+  const handleLogout = () => {
+    logout();
+    navigate('/login', { replace: true });
+  };
 
   useEffect(() => {
     const close = (e) => { if (ref.current && !ref.current.contains(e.target)) setOpen(false); };
@@ -49,7 +57,12 @@ export default function Topbar({ onMenu }) {
             </div>
           )}
         </div>
-        <div className="avatar" aria-label="Signed in as Navya">{student.fullName[0]}</div>
+        <button className="icon-btn" onClick={handleLogout} title="Logout" aria-label="Logout">
+          <LogOut size={18} />
+        </button>
+        <div className="avatar" title={displayName} aria-label={`Signed in as ${displayName}`}>
+          {displayName[0].toUpperCase()}
+        </div>
       </div>
     </header>
   );

@@ -1,0 +1,12 @@
+/* Login / sign-up page. Uses the colors already defined in global.css */
+.auth-wrap { min-height: 100vh; display: grid; place-items: center; padding: 24px; background: var(--bg); }
+.auth-card { width: 100%; max-width: 430px; padding: 28px; }
+.auth-brand { display: flex; justify-content: center; margin-bottom: 18px; }
+.auth-title { text-align: center; font-size: 20px; margin-bottom: 4px; }
+.auth-sub { text-align: center; color: var(--muted); font-size: 13px; margin-bottom: 18px; }
+.auth-tabs { display: flex; justify-content: center; margin-bottom: 18px; }
+.auth-form { display: flex; flex-direction: column; gap: 14px; }
+.auth-error { background: var(--red-s); color: #C23552; border-radius: 10px; padding: 10px 12px; font-size: 13px; font-weight: 600; }
+.auth-foot { display: flex; align-items: center; justify-content: center; gap: 6px; margin-top: 16px; color: var(--muted); font-size: 12px; }
+.auth-foot svg { color: var(--green); }
+.auth-form .btn { width: 100%; }

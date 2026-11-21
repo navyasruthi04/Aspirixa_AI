@@ -14,7 +14,7 @@ import { pyqs } from '../data/pyqData.js';
 import { doubts } from '../data/communityData.js';
 import { difficultyFor } from '../utils/helpers.js';
 
-export const BASE_URL = 'http://127.0.0.1:8000';
+export const BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:8000';
 const USE_MOCK = true;
 const USE_BACKEND_RECOMMENDATION = true;
 const USE_BACKEND_DIAGNOSTIC = true;
@@ -25,10 +25,77 @@ const wait = (ms = 500) => new Promise((r) => setTimeout(r, ms));
 const clone = (o) => JSON.parse(JSON.stringify(o));
 const strip = ({ answer, explanation, ...rest }) => rest;
 
+const TOKEN_KEY = 'aspirixa_token';
+const USER_KEY = 'aspirixa_user';
+
+export const getToken = () => localStorage.getItem(TOKEN_KEY);
+export const isLoggedIn = () => Boolean(getToken());
+
+export function getStoredUser() {
+  try {
+    return JSON.parse(localStorage.getItem(USER_KEY) || 'null');
+  } catch {
+    return null;
+  }
+}
+
+function saveSession({ token, user }) {
+  localStorage.setItem(TOKEN_KEY, token);
+  localStorage.setItem(USER_KEY, JSON.stringify(user));
+}
+
+export function logout() {
+  localStorage.removeItem(TOKEN_KEY);
+  localStorage.removeItem(USER_KEY);
+  localStorage.removeItem('aspirixa_weak_topics');
+  localStorage.removeItem('aspirixa_diagnostic_result');
+}
+
 async function request(path, options = {}) {
-  const res = await fetch(`${BASE_URL}${path}`, { headers: { 'Content-Type': 'application/json' }, ...options });
-  if (!res.ok) throw new Error(`Request failed (${res.status})`);
+  const { auth = true, headers: extraHeaders, ...fetchOptions } = options;
+  const headers = { 'Content-Type': 'application/json', ...(extraHeaders || {}) };
+  const token = getToken();
+
+  if (auth && token) headers.Authorization = `Bearer ${token}`;
+
+  const res = await fetch(`${BASE_URL}${path}`, { ...fetchOptions, headers });
+
+  if (res.status === 401 && auth) {
+    logout();
+    if (window.location.pathname !== '/login') window.location.assign('/login');
+    throw new Error('Please sign in to continue.');
+  }
+
+  if (!res.ok) {
+    let message = `Request failed (${res.status})`;
+    try {
+      const body = await res.json();
+      if (typeof body.detail === 'string') message = body.detail;
+    } catch {}
+    throw new Error(message);
+  }
+
   return res.json();
+}
+
+export async function registerUser({ fullName, email, password }) {
+  const session = await request('/auth/register', {
+    method: 'POST',
+    auth: false,
+    body: JSON.stringify({ full_name: fullName, email, password }),
+  });
+  saveSession(session);
+  return session.user;
+}
+
+export async function loginUser({ email, password }) {
+  const session = await request('/auth/login', {
+    method: 'POST',
+    auth: false,
+    body: JSON.stringify({ email, password }),
+  });
+  saveSession(session);
+  return session.user;
 }
 
 // In-memory mock state (resets on page refresh)
