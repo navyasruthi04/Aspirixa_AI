@@ -65,7 +65,7 @@ app = FastAPI(
     lifespan=lifespan
 )
 
-
+print("CORS_ORIGINS at startup:", os.getenv("CORS_ORIGINS", "NOT SET"))
 # Allow React frontend to communicate with FastAPI
 app.add_middleware(
     CORSMiddleware,
