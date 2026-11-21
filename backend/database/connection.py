@@ -1,43 +1,54 @@
-from pathlib import Path  #imports Python's path-handling tool.
+
+import os
+from pathlib import Path
 
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, DeclarativeBase
 
+BASE_DIR = Path(__file__).resolve().parents[2]
 
-# Find the main Aspirixa_AI project folder
-BASE_DIR = Path(__file__).resolve().parents[2]  #finds our main project folder:
+# Render supplies DATABASE_URL; local development defaults to SQLite.
+DATABASE_URL = os.getenv("DATABASE_URL")
 
-# Location of our SQLite database
-DATABASE_PATH = BASE_DIR / "database" / "aspirixa.db" #Aspirixa_AI/database/aspirixa.db
+if DATABASE_URL:
+    # Use the psycopg 3 driver for PostgreSQL.
+    if DATABASE_URL.startswith("postgres://"):
+        DATABASE_URL = DATABASE_URL.replace(
+            "postgres://", "postgresql+psycopg://", 1
+        )
+    elif DATABASE_URL.startswith("postgresql://"):
+        DATABASE_URL = DATABASE_URL.replace(
+            "postgresql://", "postgresql+psycopg://", 1
+        )
 
-# SQLite database URL
-DATABASE_URL = f"sqlite:///{DATABASE_PATH}" #This tells SQLAlchemy: We are using SQLite and this is where the database file is located.
+    engine = create_engine(
+        DATABASE_URL,
+        pool_pre_ping=True,
+    )
+else:
+    DATABASE_PATH = BASE_DIR / "database" / "aspirixa.db"
+    DATABASE_PATH.parent.mkdir(parents=True, exist_ok=True)
 
+    DATABASE_URL = f"sqlite:///{DATABASE_PATH}"
 
-# Create SQLAlchemy engine
-engine = create_engine(           #engine? Think of it as the main connection mechanism between our application and SQLite
-    DATABASE_URL,
-    connect_args={"check_same_thread": False}
-)
+    engine = create_engine(
+        DATABASE_URL,
+        connect_args={"check_same_thread": False},
+    )
 
-
-# Create database sessions
-SessionLocal = sessionmaker(    #A session is used when our application needs to interact with the database.
+SessionLocal = sessionmaker(
     autocommit=False,
     autoflush=False,
-    bind=engine
+    bind=engine,
 )
 
 
-# Base class for our database models
-class Base(DeclarativeBase):  
+class Base(DeclarativeBase):
     pass
 
 
-# Database dependency for FastAPI
 def get_db():
     db = SessionLocal()
-
     try:
         yield db
     finally:
